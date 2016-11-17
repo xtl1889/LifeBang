@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LifeBang</string>
+
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="string_loading">Loading&#8230;</string>
+    <string name="string_retry">点击重新加载</string>
+    <string name="string_fail">加载失败</string>
+
+
+    <string name="time_day">天前</string>
+    <string name="time_hour">小时前</string>
+    <string name="time_minute">分钟前</string>
+    <string name="time_second">刚刚</string>
+
+    <string name="date_day">天</string>
+    <string name="date_hour">小时</string>
+    <string name="date_minute">分</string>
+    <string name="date_second">秒</string>
+</resources>

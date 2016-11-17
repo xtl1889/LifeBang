@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+
+    <!--首页顶部菜单颜色-->
+    <color name="bg_home">#EBF9FC</color>
+    // 首页tab背景颜色
+    <color name="tab_host_bg_color">#272727</color>
+    <color name="tab_bottom_text_unseletor">#666666</color>
+    <color name="tab_bottom_text_seletor">#FF6633</color>
+
+    <color name="trans_white">#ccffffff</color>
+
+    <color name="main_black">#111111</color>
+    <color name="center_login_text_gray">#606060</color>
+
+    //分类页面
+    <color name="black_lines">#000000</color>
+    <color name="grid_lines">#f0f0f0</color>
+</resources>

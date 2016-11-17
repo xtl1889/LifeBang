@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:id="@+id/news_item"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/news_item_iv"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@color/grid_lines"
+        app:placeholderImage="@drawable/refresh_failed"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/news_item_iv"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/news_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="标题"
+            android:textColor="@color/main_black"
+            />
+
+        <TextView
+            android:id="@+id/news_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="时间"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:id="@+id/news_item_from"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="来自"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

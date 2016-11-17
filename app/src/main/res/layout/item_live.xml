@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/px_20"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/layout_home_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_anchor_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_20"
+            android:text="未加载"
+            android:textSize="@dimen/sp_40"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_imgview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_home_name"
+        android:gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundedCornerRadius="3.33dp"
+            fresco:roundingBorderWidth="2dp"
+            android:background="@drawable/click_refresh"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_room_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
