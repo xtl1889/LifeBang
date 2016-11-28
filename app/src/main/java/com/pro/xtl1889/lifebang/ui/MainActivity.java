@@ -39,6 +39,7 @@ public class MainActivity extends TabActivity {
     }
 
 
+    //测试提交
 
     private void startActivity(int resource,TabHost.TabSpec tab,View view,Class l) {
         view=inflater.inflate(resource, null);
