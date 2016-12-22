@@ -81,7 +81,7 @@ public class NewsFragment extends BaseLoadFragment<NewData> {
         cmsAPI= RetrofitUtils.getRestAPI(Config.BaiDu_Url, CmsAPI.class);
         switch (mTag){
             case 1:
-//                tv.setText("社会新闻");
+//                tv.setText("科技新闻");
                 call=cmsAPI.socialNews(String.valueOf(newsNum),String.valueOf(newsPage));
                 break;
             case 0:

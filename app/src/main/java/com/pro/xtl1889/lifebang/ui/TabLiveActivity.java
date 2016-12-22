@@ -69,8 +69,9 @@ public class TabLiveActivity extends BaseActivity {
     private void getData(){
         mList=new ArrayList<>();
         LiveModel liveModel;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             liveModel=new LiveModel();
+            liveModel.setLiveTag(i);
             switch (i){
                 case 0:
                     liveModel.setTitle("百度音乐");
@@ -85,21 +86,9 @@ public class TabLiveActivity extends BaseActivity {
                     break;
 
                 case 2:
-                    liveModel.setTitle("百思不得姐2");
+                    liveModel.setTitle("笑话大全");
 //                    liveModel.setBitmap(BitmapFactory.decodeResource(this.getResources(),R.drawable.no_sister));
-                    liveModel.setId_iv(R.drawable.no_sister);
-                    break;
-
-                case 3:
-                    liveModel.setTitle("百思不得姐3");
-//                    liveModel.setBitmap(BitmapFactory.decodeResource(this.getResources(),R.drawable.no_sister));
-                    liveModel.setId_iv(R.drawable.no_sister);
-                    break;
-
-                case 4:
-                    liveModel.setTitle("百思不得姐4");
-//                    liveModel.setBitmap(BitmapFactory.decodeResource(this.getResources(),R.drawable.no_sister));
-                    liveModel.setId_iv(R.drawable.no_sister);
+                    liveModel.setId_iv(R.drawable.funs);
                     break;
             }
             mList.add(liveModel);

@@ -38,11 +38,11 @@ public interface CmsAPI {
 * */
 
 
-//社会新闻
+//科技新闻
     @Headers({
             "apikey:8dd5bf2ee0ac44710cd4305097e8fb6e"
     })
-    @GET("social/social")
+    @GET("keji/keji")
     Call<NewData> socialNews(
             @Query("num") String num,
             @Query("page") String page
@@ -121,5 +121,19 @@ public interface CmsAPI {
     Call<NewData> noSister(
             @Query("num") String num,
             @Query("page") String page
+    );
+
+
+    /*
+    * 笑话大全
+    *
+    *time 从这个时间以来最新的笑话.格式：yyyy-MM-dd
+    * page  第几页
+    *maxResult  每页最大记录数。其值为1至50
+    * */
+    Call<NewData> allFunes(
+            @Query("time") String time,
+            @Query("page") String page,
+            @Query("maxResult") String maxResult
     );
 }

@@ -6,10 +6,19 @@ import android.graphics.Bitmap;
  * Created by xtl1889 on 16-9-3.
  */
 public class LiveModel {
+    private int liveTag;
     private String title;
     private String imgUrl;
     private Bitmap bitmap;
     private int id_iv;
+
+    public int getLiveTag() {
+        return liveTag;
+    }
+
+    public void setLiveTag(int liveTag) {
+        this.liveTag = liveTag;
+    }
 
     public String getTitle() {
         return title;

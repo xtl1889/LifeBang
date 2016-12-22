@@ -37,6 +37,8 @@ public class TabHomeActivity extends BaseActivity {
     private TabHome_viewpagerAdapter mViewpagerAdapter;
 
     private CmsAPI cmsAPI,cmsAPI1;
+
+    String[] titleString={"国际新闻","科技新闻","健康生活","体育新闻","娱乐花边"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,24 +56,8 @@ public class TabHomeActivity extends BaseActivity {
         NewFragmentModel fragmentModel;
         NewsFragment newFragment;
         String title = null;
-        for (int i = 0; i < 5; i++) {
-            switch (i){
-                case 0:
-                    title="国际新闻";
-                    break;
-                case 1:
-                    title="社会新闻";
-                    break;
-                case 2:
-                    title="健康生活";
-                    break;
-                case 3:
-                    title="体育新闻";
-                    break;
-                case 4:
-                    title="娱乐花边";
-                    break;
-            }
+        for (int i = 0; i < titleString.length; i++) {
+            title=titleString[i];
             newFragment=new NewsFragment(this,i);
             fragmentModel=new NewFragmentModel(title,newFragment);
             mList.add(fragmentModel);
