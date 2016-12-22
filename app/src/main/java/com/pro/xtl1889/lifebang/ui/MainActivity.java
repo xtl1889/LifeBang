@@ -21,6 +21,7 @@ public class MainActivity extends TabActivity {
         setContentView(R.layout.activity_main);
 
 
+        //公司测试提交
         inflater=LayoutInflater.from(this);
         host=this.getTabHost();
 
