@@ -1,6 +1,8 @@
 package com.pro.xtl1889.lifebang.api;
 
+
 import com.pro.xtl1889.lifebang.model.Cs;
+import com.pro.xtl1889.lifebang.model.FunsModel;
 import com.pro.xtl1889.lifebang.model.NewData;
 
 import okhttp3.ResponseBody;
@@ -8,6 +10,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Query;
+import retrofit2.http.Path;
 
 /**
  * Created by xtl1889 on 16-8-3.
@@ -130,8 +133,16 @@ public interface CmsAPI {
     *time 从这个时间以来最新的笑话.格式：yyyy-MM-dd
     * page  第几页
     *maxResult  每页最大记录数。其值为1至50
+    *
+    * appid--->24072
+    * 此app的密钥为29fa4cb35be14edb98ee210e82d29819
+    * 341-1  文本    341-2 图片    341-3  动态图
     * */
-    Call<NewData> allFunes(
+    @GET("{tag}")
+    Call<FunsModel> allFunes(
+            @Path("tag") String tag,
+            @Query("showapi_appid") String showapi_appid,
+            @Query("showapi_sign") String showapi_sign,
             @Query("time") String time,
             @Query("page") String page,
             @Query("maxResult") String maxResult

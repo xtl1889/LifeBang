@@ -54,7 +54,7 @@ public class LiveAdapter extends BaseRecyclerAdapter<LiveModel> {
                 if (position==2){//跳转到笑话大全
                    mContext.startActivity(new Intent(mContext, FunsActivity.class));
                 }
-                Toast.makeText(mContext,"跳转想起页面",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(mContext,"跳转想起页面",Toast.LENGTH_SHORT).show();
             }
         });
     }

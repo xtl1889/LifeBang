@@ -52,4 +52,5 @@ public class FunsJsonModle {
     public void setContentlist(List<FunsItemModel> contentlist) {
         this.contentlist = contentlist;
     }
+
 }
