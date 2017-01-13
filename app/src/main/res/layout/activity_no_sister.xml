@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pro.xtl1889.lifebang.ui.NoSisterActivity">
+
+    <com.pro.xtl1889.lifebang.ui.pull2refresh.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.pro.xtl1889.lifebang.ui.pull2refresh.PullableRecyclerView
+            android:id="@+id/no_sister_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+    </com.pro.xtl1889.lifebang.ui.pull2refresh.PullToRefreshLayout>
+</RelativeLayout>

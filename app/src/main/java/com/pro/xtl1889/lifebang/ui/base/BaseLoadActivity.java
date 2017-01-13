@@ -26,7 +26,7 @@ import retrofit2.Callback;
 /**
  * Created by zuoxian on 15/9/7.
  */
-public abstract class BaseLoadActivity<T> extends AppCompatActivity implements Callback {
+public abstract class BaseLoadActivity<T> extends AppCompatActivity implements Callback<T> {
 
     private Menu mMenu;
     private Unbinder unbinder;

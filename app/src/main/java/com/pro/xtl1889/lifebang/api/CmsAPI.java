@@ -4,6 +4,7 @@ package com.pro.xtl1889.lifebang.api;
 import com.pro.xtl1889.lifebang.model.Cs;
 import com.pro.xtl1889.lifebang.model.FunsModel;
 import com.pro.xtl1889.lifebang.model.NewData;
+import com.pro.xtl1889.lifebang.model.NoSisterModle;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -120,9 +121,22 @@ public interface CmsAPI {
 
     //百思不得姐
 
+    /*
+    * type
+    * 查询的类型，默认全部返回。
+        type=10 图片
+        type=29 段子
+        type=31 声音
+        type=41 视频
+    * title  文本中包括的内容，模糊查询
+    * page  第几页。每页最多返回20条记录
+    * */
     @GET("255-1")
-    Call<NewData> noSister(
-            @Query("num") String num,
+    Call<NoSisterModle> noSister(
+            @Query("showapi_appid") String showapi_appid,
+            @Query("showapi_sign") String showapi_sign,
+            @Query("type") String type,
+            @Query("title") String title,
             @Query("page") String page
     );
 

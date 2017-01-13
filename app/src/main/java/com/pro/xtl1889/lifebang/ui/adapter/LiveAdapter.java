@@ -13,6 +13,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.pro.xtl1889.lifebang.R;
 import com.pro.xtl1889.lifebang.model.LiveModel;
 import com.pro.xtl1889.lifebang.ui.FunsActivity;
+import com.pro.xtl1889.lifebang.ui.NoSisterActivity;
 import com.pro.xtl1889.lifebang.ui.base.BaseRecyclerAdapter;
 import com.pro.xtl1889.lifebang.util.DeviceUtils;
 import com.pro.xtl1889.lifebang.util.LogUtils;
@@ -53,6 +54,10 @@ public class LiveAdapter extends BaseRecyclerAdapter<LiveModel> {
             public void onClick(View v) {
                 if (position==2){//跳转到笑话大全
                    mContext.startActivity(new Intent(mContext, FunsActivity.class));
+                }else if (position==1){//跳转到百思不得姐
+                    mContext.startActivity(new Intent(mContext, NoSisterActivity.class));
+                }else if (position==0){
+
                 }
 //                Toast.makeText(mContext,"跳转想起页面",Toast.LENGTH_SHORT).show();
             }
