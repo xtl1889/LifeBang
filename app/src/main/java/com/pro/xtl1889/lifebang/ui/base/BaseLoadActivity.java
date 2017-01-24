@@ -116,7 +116,7 @@ public abstract class BaseLoadActivity<T> extends AppCompatActivity implements C
                 @Override
                 public void onLoadMore(PullToRefreshLayout pullToRefreshLayout) {
                     mPullToRefreshLayout.loadmoreFinish(PullToRefreshLayout.SUCCEED);
-                    onLoadData();
+                    onLoadMoreData();
                 }
             });
         }
@@ -178,7 +178,7 @@ public abstract class BaseLoadActivity<T> extends AppCompatActivity implements C
 
     protected abstract void onInitLoadData(T pageData);
 
-//    protected abstract void onLoadMoreData();
+    protected abstract void onLoadMoreData();
 
 
     protected void setPageData(T page_data){

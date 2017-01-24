@@ -21,4 +21,9 @@
     //分类页面
     <color name="black_lines">#000000</color>
     <color name="grid_lines">#f0f0f0</color>
+
+    //页面背景颜色
+    <color name="bg_gray">#e5efe9</color>
+    <color name="bg_gray1">#696969</color>
+    <color name="bg_darkGray">#A9A9A9</color>
 </resources>

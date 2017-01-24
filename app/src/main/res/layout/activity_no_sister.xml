@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pro.xtl1889.lifebang.ui.NoSisterActivity">
+    tools:context="com.pro.xtl1889.lifebang.ui.NoSisterActivity"
+    android:background="@color/bg_gray"
+    >
 
+    <include layout="@layout/nosister_head_layout"
+        android:id="@+id/nosister_head_layout"
+        />
     <com.pro.xtl1889.lifebang.ui.pull2refresh.PullToRefreshLayout
         android:id="@+id/pull_to_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nosister_head_layout"
+        >
 
         <com.pro.xtl1889.lifebang.ui.pull2refresh.PullableRecyclerView
             android:id="@+id/no_sister_list"
